@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Untuk Sypa 💖</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600;700&display=swap');
+  body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* --- PERUBAHAN BACKGROUND: PINK CANTIK --- */
+    background: radial-gradient(circle at center, #3d004d, #1a002b, #000000); /* Gradasi: Ungu gelap ke Ungu-Pink ke Hitam */
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    overflow: hidden;
+  }
+
+  h1 {
+    font-family: "Great Vibes", cursive;
+    font-size: 2.5rem;
+    color: #ff9fe8;
+    text-shadow: 0 0 5px #ffb6f9;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out forwards;
+    z-index: 2;
+  }
+
+  /* Kotak Teks Utama */
+  .text-container {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px 40px;
+    margin: 20px;
+    box-shadow: 0 0 15px rgba(255, 0, 150, 0.4); /* Bayangan sekarang lebih pink/ungu */
+    max-width: 650px;
+    text-align: center;
+    line-height: 1.7;
+    opacity: 0;
+    animation: fadeInBox 2.5s ease-in-out forwards;
+    animation-delay: 1s;
+    z-index: 1;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .text-container p {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #8be8ff;
+    animation: hueRotate 10s linear infinite;
+    text-shadow: none;
+  }
+
+  .text-container p .glow {
+    color: #00eaff;
+    text-shadow: none;
+    animation: hueRotate 10s linear infinite;
+    font-weight: 600;
+  }
+
+  .text-container p span {
+    color: #b2faff;
+    text-shadow: none;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 20px;
+    font-size: 0.9rem;
+    opacity: 0.7;
+    color: #f0b0ff; /* Warna footer diubah menjadi pink-biru */
+    z-index: 2;
+  }
+
+  /* --- Keyframes Utama --- */
+  @keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+  }
+
+  @keyframes fadeInBox {
+    from {opacity: 0; transform: scale(0.9);}
+    to {opacity: 1; transform: scale(1);}
+  }
+
+  @keyframes hueRotate {
+    0% { filter: hue-rotate(0deg); }
+    100% { filter: hue-rotate(360deg); }
+  }
+
+
+  /* --- Teks Berjalan Rapi (Ticker Tape) --- */
+  .ticker-container {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    z-index: 0;
+    white-space: nowrap;
+  }
+
+  .ticker-top {
+    top: 50px;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  .ticker-bottom {
+    bottom: 50px;
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+
+  .ticker-content {
+    display: inline-block;
+    color: #ffd1ff; /* Warna pink/ungu */
+    padding: 0 50px;
+    animation: tickerMoveA 30s linear infinite;
+  }
+  
+  .ticker-content-epep {
+    display: inline-block;
+    color: #b0e0ff; /* Warna biru muda */
+    padding: 0 50px;
+    animation: tickerMoveB 35s linear infinite;
+  }
+
+  /* Animasi Ticker Tape Kanan ke Kiri */
+  @keyframes tickerMoveA {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+
+  /* Animasi Ticker Tape Kiri ke Kanan */
+  @keyframes tickerMoveB {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+
+</style>
+</head>
+<body>
+  <div class="ticker-container ticker-bottom">
+    <div class="ticker-content-epep">
+      kapan kapan kita mabar epep bareng🥹🫶🏻 kapan kapan kita mabar epep bareng🥹🫶🏻 kapan kapan kita mabar epep bareng🥹🫶🏻
+    </div>
+  </div>
+
+  <div class="ticker-container ticker-top">
+    <div class="ticker-content">
+      makasih ya sypa 💕 makasih ya sypa ✨ makasih ya sypa 💫 makasih ya sypa 💖 makasih ya sypa 🤍
+    </div>
+  </div>
+
+  <h1>Untuk Sypa 💖</h1>
+
+  <div class="text-container">
+    <p>
+      “Dari semua suara yang lewat, cuma kata-katamu, <span class="glow">Sypa</span>, yang bener-bener nyentuh hati.<br>
+      Makasih udah jadi pelipur di saat aku ngerasa sendirian.<br>
+      Aku bakal inget kata-katamu — bukan cuma di kepala, tapi juga di hati.<br>
+      Kamu orang baik, jangan pernah berubah ya 🤍🌙”<br><br>
+      <span>- Dari aku, yang bersyukur pernah denger kata sehangat itu ✨</span>
+    </p>
+  </div>
+
+  <footer>by Raisa 💫</footer>
+</body>
+</html>
